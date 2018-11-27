@@ -20,17 +20,17 @@ parfaitement modulable au niveau de la composition du groupe et de l’ajout des
 Fonctionnement de l'application :
 
 L’utilisateur devra créer son groupe de dépenses en entrant leurs noms qui s’inscriront dans une
-base de données locale. Et à chaque dépense il lui sera demander le montant de celle-ci, son type et
+base de données locale. A chaque dépense il lui sera demandé le montant de celle-ci, son type et
 sa date.
 Le programme effectuera alors les calculs pour répartir les coûts de manière équitable entre tous les
 membres du groupe de départ. Cette répartition sera visible par chaque utilisateur dans leur balance.
-Si leur balance à la fin de la période donnée est positive, d’autres membres du groupe leur devront
+Si leur balance à la fin de la période donnée est positive, d’autres membres du groupe lui devront
 de l’argent alors que si elle est négative ils devront rembourser une certaine somme à un ou
 plusieurs des membres du groupe.
-Toutes les dépenses seront accessibles à tout moment par chaque utilisateur à tout moment.
-Pour aller un peu plus loin que l’application originelle nous voulions faire en sorte que chaque
+Toutes les dépenses seront accessibles à tout moment par chaque utilisateur.
+Pour aller un peu plus loin que l’application originale nous voulions faire en sorte que chaque
 personne qui utilise l’application aie la capacité de choisir le mode de paiement sur lequel il s’attend
-à être rembourser (Paypal , Compte bancaire , carte de crédit)
+à être remboursé (Paypal , Compte bancaire , carte de crédit)
 Une autre idée était de laisser la personne choisir la monnaie dans laquelle il/elle voudrait être
-rembourser dans le cas possible d’un groupe international.
+remboursé dans le cas possible d’un groupe international.
 
