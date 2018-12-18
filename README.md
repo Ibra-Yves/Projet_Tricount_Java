@@ -9,7 +9,7 @@ VASE Rémy	 (_**@RemyVase**_)
 QUIRYNEN Gilles  (_**@VaelinALSo**_)
 
 
-But du projet :
+## But du projet :
 
 Le but de ce projet est de développer un programme qui aura les mêmes fonctionnalités que
 l’application Tricount déjà existante. Cette application fort utile sert à répartir les dépenses d’un
@@ -17,7 +17,7 @@ groupe que ce soit une colocation, un voyage entre amis ou autre. L’objectif �
 parfaitement modulable au niveau de la composition du groupe et de l’ajout des dépenses.
 
 
-Fonctionnement de l'application :
+## Fonctionnement de l'application :
 
 L’utilisateur devra créer son groupe de dépenses en entrant leurs noms qui s’inscriront dans une
 base de données locale. A chaque dépense il lui sera demandé le montant de celle-ci, son type et
