@@ -2,11 +2,11 @@
 
 ## Groupe n° 2
 
-##CONDE Ibrahima   (_**@Ibra-Yves**_)
+CONDE Ibrahima   (_**@Ibra-Yves**_)
 
-##VASE Rémy	 (_**@RemyVase**_)
+VASE Rémy	 (_**@RemyVase**_)
 
-##QUIRYNEN Gilles  (_**@VaelinALSo**_)
+QUIRYNEN Gilles  (_**@VaelinALSo**_)
 
 
 But du projet :
