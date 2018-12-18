@@ -6,7 +6,7 @@ CONDE Ibrahima   (_**@Ibra-Yves**_)
 
 VASE Rémy	 (_**@RemyVase**_)
 
-QUIRYNEN Gilles  (_**@VaelinALSo**_)
+QUIRYNEN Gilles  (_**@VaelinAlSo**_)
 
 
 ## But du projet :
