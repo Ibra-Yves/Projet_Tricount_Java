@@ -1,12 +1,12 @@
 # Projet_Tricount_Java
 
-Groupe n° 2
+## Groupe n° 2
 
-CONDE Ibrahima   (@Ibra-Yves)
+##CONDE Ibrahima   (_**@Ibra-Yves**_)
 
-VASE Rémy	 (@RemyVase)
+##VASE Rémy	 (_**@RemyVase**_)
 
-QUIRYNEN Gilles  (@VaelinALSo)
+##QUIRYNEN Gilles  (_**@VaelinALSo**_)
 
 
 But du projet :
