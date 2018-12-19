@@ -238,3 +238,4 @@ public class FenetreParticipant extends JDialog {
 		return rdbtnCash;
 	}
 
+}
