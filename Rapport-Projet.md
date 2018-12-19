@@ -2,11 +2,11 @@
 
 ## Groupe 2
 
-CONDE Ibrahima **_(@Ibra-Yves)**_
+CONDE Ibrahima **(@Ibra-Yves)**
 
-VASE Rémy	**_(@RemyVase)**_
+VASE Rémy	**(@RemyVase)**
 
-QUIRYNEN Gilles **_(@VaelinAlSo)**_
+QUIRYNEN Gilles **(@VaelinAlSo)**
 
 # Github
 
