@@ -237,4 +237,4 @@ public class FenetreParticipant extends JDialog {
 	public JRadioButton getRdbtnCash() {
 		return rdbtnCash;
 	}
-}
+
