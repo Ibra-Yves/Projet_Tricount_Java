@@ -9,10 +9,12 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableModel;
 
 import dev.java.tricount.model.DBAccess;
 import dev.java.tricount.model.Depense;
 import dev.java.tricount.model.Participant;
+import dev.java.tricount.model.Remboursement;
 
 public class GuiController {
 	
@@ -125,6 +127,92 @@ public class GuiController {
 			showSQLException(e);
 			e.printStackTrace();
 		}
+	}
+
+	public void montrerRemboursements() {
+		
+		ArrayList<Participant> participants;
+		try {
+			participants = dbaccess.retrouveParticipants();
+			
+			Vector<String>  colNames = new Vector();
+			colNames.add("id débiteur");
+			colNames.add("montant à rembourser");
+			colNames.add("id Créditeur");
+			colNames.add("montant à recevoir");
+			colNames.add("moyen de paiement");
+			
+			ArrayList<Remboursement> rembs = Participant.calculerRemboursements(participants);
+			Vector<Vector<String>> contenuTable = new Vector<Vector<String>>();
+			
+			for (Remboursement r : rembs) {
+				Vector<String> ligne = new Vector<String>();
+				ligne.add(Integer.toString(r.getIdDeb()));
+				ligne.add(r.getMontantDeb()+ " " + r.getDevDeb());
+				ligne.add(Integer.toString(r.getIdBenef()));
+				ligne.add(r.getMontantBenef()+ " " + r.getDevBenef());
+				ligne.add(r.getMoyRemb());
+				contenuTable.add(ligne);
+			}
+			
+			TableModel tmRembs = new DefaultTableModel(contenuTable, colNames);
+			FenetreRemboursements fenetreR = new FenetreRemboursements(jframe, tmRembs);
+			fenetreR.pack();
+			fenetreR.show();
+		} catch (SQLException e) {
+			showSQLException(e);
+			e.printStackTrace();
+		}
+
+		
+		
+	}
+
+	public void montrerHistorique() {
+		
+		ArrayList<Depense> depenses;
+		try {
+			depenses = dbaccess.retrouveDepenses();
+			
+			Vector<String>  colNames = new Vector();
+			colNames.add("date");
+			colNames.add("id Payeur");
+			colNames.add("Montant ");
+			colNames.add("Id Profiteurs");
+			
+			
+			
+			Vector<Vector<String>> contenuTable = new Vector<Vector<String>>();
+			
+			for (Depense d : depenses) {
+				Vector<String> ligne = new Vector<String>();
+				ligne.add(d.getDate());
+			
+				ligne.add(Integer.toString(d.getIdPayeur()));
+				ligne.add(Double.toString(d.getMontant()));
+				String profs = "";
+				for (int i = 0; i < d.getProfiteurs().length; i++) {
+					profs += d.getProfiteurs()[i];
+					if (i < d.getProfiteurs().length-1) {
+						profs += ",";
+
+					}
+				}
+				ligne.add(profs);
+				contenuTable.add(ligne);
+			}
+			
+			TableModel tmRembs = new DefaultTableModel(contenuTable, colNames);
+			FenetreHistoDepenses fenetreH = new FenetreHistoDepenses(jframe, tmRembs);
+			fenetreH.pack();
+			fenetreH.show();
+		} catch (SQLException e) {
+			showSQLException(e);
+			e.printStackTrace();
+		}
+
+		
+		
 	}
 
 }
