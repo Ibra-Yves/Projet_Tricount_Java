@@ -57,13 +57,25 @@ public class FenetrePrincipale extends JPanel {
 		panel.add(btnAjouterDpense, gbc_btnAjouterDpense);
 		
 		JButton btnCalculerRemboursement = new JButton("Calculer Remboursement");
+		btnCalculerRemboursement.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				controller.montrerRemboursements();
+				
+			}
+		});
 		GridBagConstraints gbc_btnCalculerRemboursement = new GridBagConstraints();
 		gbc_btnCalculerRemboursement.insets = new Insets(10, 10, 10, 10);
 		gbc_btnCalculerRemboursement.gridx = 0;
 		gbc_btnCalculerRemboursement.gridy = 3;
 		panel.add(btnCalculerRemboursement, gbc_btnCalculerRemboursement);
 		
-		JButton btnAfficherHistorique = new JButton("Afficher historique");
+		JButton btnAfficherHistorique = new JButton("Afficher historique des dépenses");
+		btnAfficherHistorique.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				controller.montrerHistorique();
+				
+			}
+		});
 		GridBagConstraints gbc_btnAfficherHistorique = new GridBagConstraints();
 		gbc_btnAfficherHistorique.insets = new Insets(10, 10, 10, 10);
 		gbc_btnAfficherHistorique.gridx = 0;
@@ -101,3 +113,4 @@ public class FenetrePrincipale extends JPanel {
 	}
 
 }
+
