@@ -1,0 +1,13 @@
+Step 1 : Télécharger les zip de l'exécutable, de la base de données 
+
+Step 2 : Créer un serveur "Tricount" sur Sybase12 avec les lignes : -n srvWeb "Votrechemin\Tricunt.db"
+                                                                    -x tcpip(port=2638)
+                                                                    -xs http(port=80)
+
+Step 3 : Lancer le serveur 
+
+Step 4 : Dézipper les fichier de l'exécutable sans changer l'ordre des ou la place des fichiers inclus
+
+Step 5 : Lancer le fichier Tricount.bat 
+
+Step 6 : Utiliser l'application en appuyant sur les boutons à droite 
