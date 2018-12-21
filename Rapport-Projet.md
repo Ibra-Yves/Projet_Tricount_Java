@@ -2,7 +2,6 @@ QUIRYNEN Gilles
 VASE Rémy
 CONDE Ibrahima
 
-### 2TL1		Ephec
 
 
 # Rapport du projet Tricount pour le cours de Développement informatique avancé : applications
